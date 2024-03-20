@@ -46,6 +46,6 @@ async def get_report(
             drive_service.files.delete(fileId=spreadsheet_id),
         )
         raise HTTPException(
-            status_code=status.HTTP_400_BAD_REQUEST,detail=str(error)
+            status_code=status.HTTP_400_BAD_REQUEST, detail=str(error)
         )
     return spreadsheet_url

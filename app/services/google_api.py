@@ -93,7 +93,7 @@ async def spreadsheets_update_value(
     table_column_count = max(map(len, table_values))
     if (
             table_row_count > settings.ROW_COUNT
-            or
+    ) or (
             table_column_count > settings.COLUMN_COUNT
     ):
         raise ValueError(

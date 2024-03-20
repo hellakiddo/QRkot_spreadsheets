@@ -28,7 +28,7 @@ class Settings(BaseSettings):
     ROW_COUNT = 100
     COLUMN_COUNT = 11
     FORMAT = '%Y/%m/%d %H:%M:%S'
-    TITLE= 'Отчет от: '
+    TITLE = 'Отчет от: '
 
     class Config:
         env_file = '.env'
