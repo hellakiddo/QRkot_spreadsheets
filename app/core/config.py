@@ -27,8 +27,8 @@ class Settings(BaseSettings):
     SPREADSHEETS_VERSION = 'v4'
     ROW_COUNT = 100
     COLUMN_COUNT = 11
-    UPDATE_RANGE = 'A1:E30'
     FORMAT = '%Y/%m/%d %H:%M:%S'
+    TITLE= 'Отчет от: '
 
     class Config:
         env_file = '.env'
